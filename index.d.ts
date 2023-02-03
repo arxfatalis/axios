@@ -304,6 +304,7 @@ type AxiosAdapterName = 'xhr' | 'http' | string;
 type AxiosAdapterConfig = AxiosAdapter | AxiosAdapterName;
 
 export interface AxiosRequestConfig<D = any> {
+  meta?: any,
   url?: string;
   method?: Method | string;
   baseURL?: string;
